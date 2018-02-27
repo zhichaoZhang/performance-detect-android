@@ -69,7 +69,7 @@ public class BlockDetectUtil {
                 long diffMs = TimeUnit.MILLISECONDS.convert(currentFrameTimeNanos - lastFrameTimeNanos, TimeUnit.NANOSECONDS);
                 lastFrameTimeNanos = currentFrameTimeNanos;
                 if (diffMs == 0) {
-                    diffMs = (long) 16.6;
+                    diffMs = (long) 16.7;
                 }
 
                 if (isShowFPS) {
@@ -82,7 +82,7 @@ public class BlockDetectUtil {
                 }
 
                 if (diffMs > 16.7f) {
-                    long droppedCount = (long) (diffMs / 16.6);
+                    long droppedCount = (long) (diffMs / 16.7f);
                     if (droppedCount > 1) {
                         System.out.println("掉帧数 : " + droppedCount);
                     }

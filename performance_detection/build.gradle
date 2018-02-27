@@ -40,7 +40,7 @@ dependencies {
 def publishLibrary = true
 //./gradlew clean build bintrayUpload -PbintrayUser=joye -PbintrayKey=3408ba56a530f1cd34a1e8f85d993b9e17dd9a0a -PdryRun=false
 if (publishLibrary) {
-    version = "0.0.1"
+    version = "0.0.2"
     def siteUrl = 'https://github.com/zhichaoZhang'   // 项目的主页
     def gitUrl = 'https://github.com/zhichaoZhang/performance-detect-android.git'   // Git仓库的url
     group = "in.joye"            // Maven Group ID for the artifact，一般填你唯一的包名
