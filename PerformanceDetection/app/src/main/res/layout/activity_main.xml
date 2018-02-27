@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joye.performancedetection.MainActivity">
+
+    <Button
+        android:id="@+id/btn_start_frame_detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_frame_detect"
+        android:onClick="onStartFrameDetect"
+        />
+
+    <Button
+        android:id="@+id/btn_show_float_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_frame_detect"
+        android:text="@string/open_float_window"
+        android:onClick="showFloatWindow"
+        />
+
+    <Button
+        android:id="@+id/btn_hide_float_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_float_window"
+        android:text="@string/hide_float_window"
+        android:onClick="hideFloatWindow"
+        />
+
+</android.support.constraint.ConstraintLayout>
