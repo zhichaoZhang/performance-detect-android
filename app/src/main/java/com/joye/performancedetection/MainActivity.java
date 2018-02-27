@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             customView = new PerformanceFloatWidget(getApplicationContext());
             floatWindow = new FloatWindowManager.Builder()
                     .setView(customView)
-                    .setGravity(Gravity.TOP | Gravity.RIGHT, 50, 50)
+                    .setGravity(Gravity.TOP | Gravity.END, 50, 50)
                     .setTag(BlockDetectUtil.PERFORMANCE_FLOAT_WINDOW)
                     .build(getApplicationContext());
         }
@@ -56,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void hideFloatWindow(View view) {
         BlockDetectUtil.setIsShowFPS(false);
-        floatWindow.hide();
+        floatWindow.dismiss();
     }
 }

@@ -1,13 +1,12 @@
 package com.joye.performance_detection;
 
-import android.content.Context;
+import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Looper;
 import android.support.annotation.RequiresApi;
 import android.util.Printer;
 import android.view.Choreographer;
 import android.view.View;
-import android.widget.TextView;
 
 import com.joye.performance_detection.float_window.FloatWindow;
 import com.joye.performance_detection.float_window.FloatWindowManager;
@@ -55,13 +54,12 @@ public class BlockDetectUtil {
         isDetectContinue = false;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private static void detectByChoreographer() {
         Choreographer.getInstance().postFrameCallback(new Choreographer.FrameCallback() {
             long lastFrameTimeNanos = 0;
             long currentFrameTimeNanos = 0;
 
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void doFrame(long frameTimeNanos) {
                 if (lastFrameTimeNanos == 0) {

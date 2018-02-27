@@ -45,6 +45,7 @@ public class Rom {
 
     /**
      * 是否是华为系列手机
+     * @return Boolean
      */
     public static boolean isHUAWEIBRAND() {
         return BRAND_EMUI_HUAWEI.equalsIgnoreCase(Build.BRAND);
@@ -52,6 +53,7 @@ public class Rom {
 
     /**
      * 是否是荣耀系列手机
+     * @return Boolean
      */
     public static boolean isHONORBRAND() {
         return BRAND_EMUI_HONOR.equalsIgnoreCase(Build.BRAND);

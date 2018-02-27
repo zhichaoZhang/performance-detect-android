@@ -1,8 +1,8 @@
 package com.joye.performance_detection.float_window;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.view.WindowManager;
 
 /**
@@ -14,7 +14,7 @@ import android.view.WindowManager;
 public class FloatViewCompatV26 extends IFloatView {
     private Context mContext;
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
+    @TargetApi(Build.VERSION_CODES.O)
     public FloatViewCompatV26(Context appContext) {
         super(appContext);
         this.mContext = appContext;

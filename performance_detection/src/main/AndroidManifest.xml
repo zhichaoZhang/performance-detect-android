@@ -4,8 +4,12 @@
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <application>
-        <activity android:name=".float_window.RequestPermissionActivity"/>
+    <application android:fullBackupContent="true">
+        <activity android:name=".float_window.RequestPermissionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

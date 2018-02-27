@@ -1,11 +1,11 @@
 package com.joye.performance_detection.float_window;
 
+import android.annotation.TargetApi;
 import android.app.AppOpsManager;
 import android.content.Context;
 import android.os.Binder;
 import android.os.Build;
 import android.provider.Settings;
-import android.support.annotation.RequiresApi;
 
 import java.lang.reflect.Method;
 
@@ -73,7 +73,7 @@ public class AlertWindowPermissionUtil {
      * @param context 上下文
      * @return Boolean
      */
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    @TargetApi(Build.VERSION_CODES.M)
     static boolean checkAboveM(Context context) {
         return Settings.canDrawOverlays(context);
     }
