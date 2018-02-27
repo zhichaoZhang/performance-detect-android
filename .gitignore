@@ -2,7 +2,7 @@
 /performance_detection/build
 /build
 /local.properties
-/performance_detection/performance-detect-android.iml
+/performance_detection/performance_detection.iml
 /app/app.iml
 /.idea
 /.gradle
